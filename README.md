@@ -31,7 +31,8 @@ O projeto foi feito com as seguintes tecnologias:
 ## :fire: Prévia da Aplicação
 
 <div align="center">
-<img src="https://media.giphy.com/media/Lm6bmg75wR7Llcf9JG/giphy.gif" alt="preview"/>
+<img alt="Pagina de Pesquisa do repositorio" src="./src/assets/print01.png" width="auto" heigth="auto"/>
+<img alt="Paginda de Detalhes do repositorio" src="./src/assets/print02.png" width="auto" heigth="auto"/>
 </div>
 
 
@@ -55,14 +56,14 @@ $ git push origin minha-branch
 Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
 
 ## :zap: Executando o Projeto
-#### Clonando o projeto
+#### Clonando o projeto e abrindo no vscode
 ```sh
 $ git clone https://github.com/jefferson1104/github-explorer-reactJS
 $ cd github-explorer-reactJS
 $ code .
 ```
 
-#### Baixando as dependencias e iniciando aplicação
+#### Baixando as dependencias e iniciando aplicação, terminal do vscode
 ```sh
 $ yarn && yarn start
 ```
