@@ -19,7 +19,7 @@
 
 ## O projeto
 
-Aplicação feita em reactJS, consumindo api publica do GitHub para buscar repositórios, salvar as buscas em localStorage no browser e mostrar detalhes do repositório encontrado na pesquisa como por exemplo as Issues, quantos Forks o repositório teve etc...
+Aplicação feita em reactJS, consumindo api pública do GitHub para buscar repositórios, salvar as buscas em localStorage no browser e mostrar detalhes do repositório encontrado na pesquisa como por exemplo as Issues, quantos Forks o repositório teve etc...
 
 ### :rocket: Tecnologias Usadas
 
