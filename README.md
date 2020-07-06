@@ -19,7 +19,7 @@
 
 ## O projeto
 
-Aplicação para buscar repositorios no github, listar os repositorios encontrado na pesquisa e salvar em localStorage, ver detalhes das Issues de cada repositorio.
+Aplicação feita em reactJS, consumindo api publica do GitHub para buscar repositórios, salvar as buscas em localStorage no browser e mostrar detalhes do repositório encontrado na pesquisa como por exemplo as Issues, quantos Forks o repositório teve etc...
 
 ### :rocket: Tecnologias Usadas
 
