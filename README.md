@@ -1,5 +1,5 @@
 <div align="center" style="margin-bottom: 20px;">
-<img alt="Github Explorer" src="src/assets/logo.png" width="auto" heigth="auto"/>
+<img alt="Github Explorer" src="./src/assets/banner.png" width="auto" heigth="auto"/>
 </div>
 
 <div align="center" style="margin: 20px;">
