@@ -1,5 +1,6 @@
-import React, { useState, FormEvent } from 'react';
+import React, { useState, useEffect, FormEvent } from 'react';
 import { FiChevronRight } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
 import logoImg from '../../assets/logo.svg';
@@ -17,14 +18,31 @@ interface Repository {
 }
 
 const Dashboard: React.FC = () => {
-  // Estado, variavel para gravar o valor digitado no campo input, e variavel para alterar o valor
+  // Estado, variavel para gravar o valor digitado no campo input, e variavel para alterar o valor, valores inicial vazil
   const [newRepo, setNewRepo] = useState('');
 
-  // Estado para controle de erros
+  // Estado para controle de erros, valores incial vazio
   const [inputError, setInputError] = useState('');
 
-  // Estado, vetores(arrays) onde vamos armazer os repositorios
-  const [repositories, setRepositories] = useState<Repository[]>([]);
+  // Estado, vetores(arrays) onde vamos armazer os repositorios, valores inicial vazio
+  const [repositories, setRepositories] = useState<Repository[]>(() => {
+    const storageRepositories = localStorage.getItem(
+      '@GithubExplorer:repositories',
+    );
+
+    if (storageRepositories) {
+      return JSON.parse(storageRepositories);
+    }
+    return [];
+  });
+
+  // local storage
+  useEffect(() => {
+    localStorage.setItem(
+      '@GithubExplorer:repositories',
+      JSON.stringify(repositories),
+    );
+  }, [repositories]);
 
   // funcao para adicionar novos repositorios
   async function handleAddRepository(
@@ -75,7 +93,10 @@ const Dashboard: React.FC = () => {
 
       <Repositories>
         {repositories.map(repository => (
-          <a key={repository.full_name} href="teste">
+          <Link
+            key={repository.full_name}
+            to={`/repositories/${repository.full_name}`}
+          >
             <img
               src={repository.owner.avatar_url}
               alt={repository.owner.login}
@@ -86,7 +107,7 @@ const Dashboard: React.FC = () => {
             </div>
 
             <FiChevronRight size={20} />
-          </a>
+          </Link>
         ))}
       </Repositories>
     </>
