@@ -28,13 +28,6 @@ O projeto foi feito com as seguintes tecnologias:
 - [ReactJS](https://pt-br.reactjs.org/)
 - [Styled-Components](https://styled-components.com/)
 
-## :fire: Prévia da Aplicação
-
-<div align="center">
-<img alt="Pagina de Pesquisa do repositorio" src="./src/assets/print01.png" width="auto" heigth="auto"/>
-<img alt="Paginda de Detalhes do repositorio" src="./src/assets/print02.png" width="auto" heigth="auto"/>
-</div>
-
 
 ## :thinking: Como Contribuir?
 **Faça um fork deste repositório**
@@ -68,6 +61,12 @@ $ code .
 $ yarn && yarn start
 ```
 
+## :fire: Prévia da Aplicação
+
+<div align="center">
+  <img alt="Pagina de Pesquisa do repositorio" src="./src/assets/print01.png" width="auto" heigth="auto"/>
+  <img alt="Paginda de Detalhes do repositorio" src="./src/assets/print02.png" width="auto" heigth="auto"/>
+</div>
 
 ### :memo: Licença
 
