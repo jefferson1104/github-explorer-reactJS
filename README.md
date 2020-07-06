@@ -4,8 +4,8 @@
 
 <div align="center" style="margin: 20px;">
 
-[![The MIT License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](http://github.com/jefferson1104/goBarber/LICENSE.md)
-![GitHub top language](https://img.shields.io/github/languages/top/jefferson1104/gobarber?style=flat-square)
+[![The MIT License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](http://github.com/jefferson1104/github-explorer-reactJS/LICENSE.md)
+![GitHub top language](https://img.shields.io/github/languages/top/jefferson1104/github-explorer-reactJS?style=flat-square)
 
 
 <p align="center" >
